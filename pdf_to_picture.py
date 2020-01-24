@@ -2,8 +2,8 @@ from pdf2image import convert_from_path
 import os
 import tempfile
 
-os.chdir(r'C:/Users/Thierry/Desktop/test-no')
-filename='hawsco-dec-2018-43332-t.pdf'
+os.chdir(r'')
+filename=''
 
 with tempfile.TemporaryDirectory() as path:
     images_from_path=convert_from_path(filename,output_folder=os.getcwd())
